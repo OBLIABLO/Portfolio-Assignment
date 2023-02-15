@@ -6,14 +6,14 @@
 
 body{
  
-    background-image: linear-gradient(180deg, #181739, black);
+    background: #18163b;
    
 }
 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(image1.jpg);
+    background-image: url(background.jpg);
     background-size: cover;
     background-position: center;
     display: grid;
@@ -21,7 +21,7 @@ body{
 }
 #name{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: xx-large;
+    font-size: 25px;
     font-weight: 200;
     color: #FFF;
 
@@ -30,7 +30,7 @@ body{
 
 #education{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color: #FFF;
     background: rgb(0, 5, 17);
     box-shadow: 0 5px 15px rgba(0,0,0,.3);
@@ -61,7 +61,9 @@ body{
   margin-bottom: 30px;
   background-color: black;
 }
-
+.edu_component:hover{
+  box-shadow: 0 4px 8px 0 rgb(70, 42, 226), 50px 50px 50px 50px rgba(176, 82, 230, 0.055);
+}
 .center1{
     display: block;
     margin-left: auto;
@@ -106,6 +108,7 @@ span{
     background-image: linear-gradient(43deg, #CF1020 0%, #FF3800 46%, #FFCC70 100%);
     -webkit-background-clip: text;
     color: transparent;
+    font-size: 65px;
 }
 
 #skill_gradient{
@@ -177,8 +180,13 @@ span{
 }
 .image{
   width: 15%;
+  transition: transform .2s;
 }
-
+.image:hover {
+  -ms-transform: scale(0.5); 
+  -webkit-transform: scale(0.5); 
+  transform: scale(1.1); 
+}
 @media screen and (max-width: 1000px) {
   .card {
     width: 70%;
@@ -193,14 +201,19 @@ span{
   .container {
     width: 80%;
   }
-
   .heading {
     padding: 20px;
     font-size: 20px;
   }
+  span{
+    font-size: 45px;
+  }
+  #name{
+    font-size: 20px;
+  }
 #dnd{
   padding: 20px;
-  font-size: 22px;
+  font-size: 18px;
 }
   #edu_gradient {
     padding: 20px;
@@ -241,6 +254,7 @@ span{
     width: 80%;
     margin-left: 30px;
     margin: 20px auto;
+   
 }
 #interest{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -267,7 +281,6 @@ span{
   margin-right: 50px;
   width: 150px;
   height: 150px;
-  border: 3px solid #5108af;
   border-radius: 40px;
 }
 .logo{
@@ -277,7 +290,6 @@ span{
     margin-right: 50px;
     width: 150px;
     height: 150px;
-    border: 3px solid #5108af;
     border-radius: 40px;
     min-width: 25vh;
 }
